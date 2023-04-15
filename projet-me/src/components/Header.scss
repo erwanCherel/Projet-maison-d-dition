@@ -1,0 +1,109 @@
+.header-container {
+  header {
+    padding: 1rem 0;
+    .header-logo {
+      cursor: pointer;
+    }
+    li {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+  }
+  .hamburger {
+    z-index: 13;
+    background-image: url("./src/assets/hamburger-icon.svg");
+  }
+  .search {
+    background-image: url("src/assets/search-icon.svg");
+  }
+  .account {
+    background-image: url("src/assets/account-icon.svg");
+  }
+  .cart {
+    background-image: url("src/assets/cart-icon.svg");
+  }
+
+  .header-menu {
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+    line-height: 5;
+    height: 100vh;
+    font-size: 1.75rem;
+    line-height: 5rem;
+  }
+
+  .header-search {
+    z-index: 11;
+    position: absolute;
+    top: calc(48px + 2rem);
+    left: 0;
+    background: #fafafa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .inputSearch,
+  .buttonSearch {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
+    header {
+      padding: 2rem 0;
+    }
+    .header-icons {
+      gap: 1rem;
+      margin: 0 1rem;
+    }
+    .icon {
+      background-size: 60%;
+    }
+    .header-menu {
+      font-size: 2rem;
+      line-height: 6rem;
+    }
+    .header-search {
+      top: calc(48px + 4rem);
+    }
+    .inputSearch {
+      width: 80%;
+    }
+    .buttonSearch {
+      width: 20%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    header {
+      padding: 2.5rem 0;
+    }
+    .header-icons {
+      gap: 2rem;
+      max-width: 1280px;
+    }
+    .icon {
+      background-size: 80%;
+    }
+    .header-menu {
+      font-size: 2.25rem;
+      line-height: 7rem;
+    }
+    .header-search {
+      top: calc(48px + 5rem);
+    }
+    .search-container {
+      max-width: 1280px;
+      margin: auto;
+    }
+  }
+}

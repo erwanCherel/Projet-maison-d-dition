@@ -1,0 +1,28 @@
+.carousel-container {
+  .mySwiper {
+    height: 100%;
+    // max-width: 1440px;
+  }
+  .swipe {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+  }
+  .carousel1 {
+    background-image: url("src/assets/swipe1.jpg");
+  }
+  .carousel2 {
+    background-image: url("src/assets/swipe2.jpg");
+  }
+  .carousel3 {
+    background-image: url("src/assets/swipe3.jpg");
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: black;
+  }
+  .swiper-pagination-bullet {
+    background-color: black;
+  }
+}

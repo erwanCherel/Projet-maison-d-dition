@@ -1,5 +1,6 @@
 import "./App.css";
-import "./components/header.scss";
+import "./components/Header.scss";
+import "./components/Carousel.scss";
 import React from "react";
 import Home from "./pages/Home";
 
